@@ -42,7 +42,6 @@ Kafka → Spark Streaming → MinIO / Delta Lake → Spark MLlib → MLflow → 
 | **Program** | M.Tech Data Science & Artificial Intelligence |
 | **Institution** | IIT Madras Zanzibar |
 | **Instructor** | Dr. Innocent Nyalala |
-| **Submission Date** | March 30, 2026 |
 | **Repository** | [github.com/zda25m006-ship-it/big-data-project](https://github.com/zda25m006-ship-it/big-data-project) |
 
 ---
