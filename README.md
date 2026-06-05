@@ -592,12 +592,21 @@ This project's novelty lies in the **data-driven, location-adaptive label engine
 
 ## 🎬 Demo Video
 
-> **The video below demonstrates the complete working pipeline — from Kafka streaming to live demand prediction and Grafana monitoring.**
+> **The recording below demonstrates the complete working pipeline — live API health check, HIGH demand prediction, and LOW demand prediction from the real Streamlit dashboard.**
 
-<!-- DEMO VIDEO: Replace the URL below with your actual GitHub-uploaded video URL -->
-<!-- To upload: Go to any GitHub Issue → drag-drop the .mp4 → copy the generated URL -->
+<div align="center">
+<img src="docs/demo.webp" alt="Live Demo — Real-Time Ride Demand Prediction System" width="100%"/>
+</div>
 
-https://github.com/user-attachments/assets/demo-video-placeholder
+### 📸 Live Screenshots from the Running System
+
+**Streamlit Dashboard — API Health Check + Form Ready (Location 161, Hour 8)**
+
+<img src="docs/screenshot_high.png" alt="Streamlit dashboard with API health check showing status ok" width="100%"/>
+
+**HIGH Demand Predicted (Location 161, Monday 8 AM, June) — Probability: 0.5202**
+
+<img src="docs/screenshot_low.png" alt="LOW demand prediction - Location 13, 3AM" width="100%"/>
 
 ### What the Demo Shows
 
