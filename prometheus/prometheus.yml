@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "bentoml-api"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api:3000"]
+  - job_name: "streamlit-website"
+    metrics_path: /_stcore/health
+    static_configs:
+      - targets: ["website:8501"]

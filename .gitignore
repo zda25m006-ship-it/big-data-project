@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDEs / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Secrets – never commit real credentials
+.env
+
+# Large raw data files (download separately per README)
+data/raw/
+
+# Spark temp / shuffle / event logs
+spark-warehouse/
+derby.log
+metastore_db/
+spark_tmp/
+*.crc
+
+# MLflow runs stored locally
+mlruns/
+
+# MLflow artifacts folder (large binary)
+ml/artifacts/*.json
+# Keep the placeholder - overridden below if needed
+
+# Model artifacts: keep demo model.json in git, exclude large Spark pipeline files
+api/model_artifacts/*.pkl
+api/model_artifacts/*.bin
+api/model_artifacts/spark_model/
+
+# Logs
+logs/
+*.log
+
+# Docker volumes / local state
+postgres_data/
+minio_data/
+grafana_data/
+
+# OS
+*.DS_Store

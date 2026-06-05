@@ -1,0 +1,51 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {"type": "prometheus", "uid": "Prometheus"},
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 8, "x": 0, "y": 0},
+      "id": 1,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "single", "sort": "none"}},
+      "targets": [{"expr": "up", "legendFormat": "{{job}}", "refId": "A"}],
+      "title": "Service health",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "Prometheus"},
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 8, "x": 8, "y": 0},
+      "id": 2,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "single", "sort": "none"}},
+      "targets": [{"expr": "rate(process_cpu_seconds_total[1m])", "legendFormat": "CPU {{job}}", "refId": "A"}],
+      "title": "API CPU usage",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "Prometheus"},
+      "fieldConfig": {"defaults": {}, "overrides": []},
+      "gridPos": {"h": 8, "w": 8, "x": 16, "y": 0},
+      "id": 3,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "single", "sort": "none"}},
+      "targets": [{"expr": "process_resident_memory_bytes", "legendFormat": "Memory {{job}}", "refId": "A"}],
+      "title": "API memory usage",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 39,
+  "tags": ["z5008", "ride-demand"],
+  "templating": {"list": []},
+  "time": {"from": "now-15m", "to": "now"},
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Ride Demand System Dashboard",
+  "uid": "ride-demand-system",
+  "version": 1,
+  "weekStart": ""
+}

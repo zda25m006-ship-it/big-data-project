@@ -1,0 +1,16 @@
+{
+  "model_type": "demo_fallback_logistic_regression",
+  "features": ["PULocationID", "hour", "day_of_week", "month", "is_weekend"],
+  "coefficients": [0.001, 0.08, 0.02, 0.01, 0.45],
+  "intercept": -1.25,
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.0,
+    "weightedPrecision": 0.0,
+    "weightedRecall": 0.0,
+    "f1": 0.0,
+    "auc": 0.0
+  },
+  "training_rows": 0,
+  "note": "Fallback demo model. Replace by running ml/train_spark_mllib.py."
+}
